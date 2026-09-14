@@ -1,0 +1,30 @@
+[project]
+name = "01-basics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Elena Matveeva", email = "helen.matveeva.n@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "N999", "D100", "D101", "D103", "D104", "CPY001", "T201", 
+    "PLR2004", "RUF001", "RUF002", "RUF003", "ERA001", "E402"
+]
+
+
+[project.scripts]
+01-basics = "01_basics:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.7",
+]
