@@ -19,6 +19,7 @@ def main() -> None:
 
 
     # Проверяем разные типы событий
+    # match/case
     print()
     print(handle({"type": "click", "x": 10, "y": 20}))  # click at (10,20)
     print(handle({"type": "key", "key": "a"}))         # letter A
