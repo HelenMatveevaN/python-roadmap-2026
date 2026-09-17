@@ -1,11 +1,10 @@
 class AppError(Exception):
     """Базовое исключение для нашего приложения."""
-    pass
 
 
 class NotFoundError(AppError):
     """Ошибка: объект не найден в системе."""
-    pass
+
 
 class ValidationError(AppError):
     """Ошибка валидации с детальной информацией о поле."""
